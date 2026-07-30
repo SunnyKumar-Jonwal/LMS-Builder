@@ -1,0 +1,2 @@
+<?php
+return ['encoding'=>'UTF-8','finalize'=>true,'ignoreNonStrings'=>false,'cachePath'=>storage_path('app/purifier'),'settings'=>['default'=>['HTML.Doctype'=>'HTML 4.01 Transitional','HTML.Allowed'=>'p,b,strong,i,em,u,a[href|title|target],ul,ol,li,br,span,blockquote,code,pre,h2,h3,h4','CSS.AllowedProperties'=>'font,font-size,font-weight,font-style,text-decoration,color,background-color,text-align','AutoFormat.AutoParagraph'=>true,'AutoFormat.RemoveEmpty'=>true]]];
