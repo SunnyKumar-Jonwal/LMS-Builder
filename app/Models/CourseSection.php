@@ -38,6 +38,22 @@ class CourseSection extends Model
         return $this->hasMany(Lesson::class);
     }
 
+codex/establish-project-context-for-lms-development-jszrnb
+    public function assignments(): HasMany
+    {
+        return $this->hasMany(Assignment::class);
+    }
+
+    public function quizzes(): HasMany
+    {
+        return $this->hasMany(Quiz::class);
+    }
+
+    public function attendanceRecords(): HasMany
+    {
+        return $this->hasMany(AttendanceRecord::class);
+    }
+main
     public function activeEnrollmentCount(): int
     {
         return $this->enrollments()->where('status', 'active')->count();
